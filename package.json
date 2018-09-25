@@ -1,13 +1,29 @@
 {
-	"name"           : "Admin-Color-Schemes",
-	"slug"           : "admin-color-schemes",
-	"description"    : "WordPress dashboard color schemes",
-	"version"        : "0.1.0",
-	"devDependencies": {
-		"grunt"               : "~0.4.1",
-		"grunt-contrib-watch" : "~0.6.1",
-		"grunt-contrib-sass"  : "~0.9.2",
-		"grunt-rtlcss": "~1.6.0",
-		"matchdep": "~0.3.0"
-	}
+  "name": "pvdind-admin-color-schemes",
+  "version": "1.0.0",
+  "description": "Additional color schemes for your WordPress admin",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config assets/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ian-pvd/pvdind-admin-color-schemes.git"
+  },
+  "keywords": [
+    "wordpress",
+    "wordpress-admin",
+    "webpack"
+  ],
+  "author": "ian.pvd@gmail.com",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/ian-pvd/pvdind-admin-color-schemes/issues"
+  },
+  "homepage": "https://github.com/ian-pvd/pvdind-admin-color-schemes#readme",
+  "devDependencies": {
+    "webpack": "^4.20.1",
+    "webpack-cli": "^3.1.1"
+  }
 }
