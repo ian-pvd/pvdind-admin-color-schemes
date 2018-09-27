@@ -8,6 +8,7 @@ const path = require('path');
 // Plugins
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const WebpackRtlPlugin = require('webpack-rtl-plugin');
 
 // Config
 module.exports = {
@@ -24,11 +25,6 @@ module.exports = {
       new OptimizeCssAssetsPlugin({})
     ]
   },
-  plugins: [
-    new MiniCSSExtractPlugin({
-      filename: '[name]/[name].css'
-    })
-  ],
   module: {
     rules: [
       {
@@ -40,5 +36,13 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new MiniCSSExtractPlugin({
+      filename: '[name]/colors.css'
+    }),
+    new WebpackRtlPlugin({
+      filename: '[name]/colors-rtl.css'
+    })
+  ]
 };
