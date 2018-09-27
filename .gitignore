@@ -1,0 +1,11 @@
+# Git Ignore File
+
+# Git Ignore Mac
+
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Git Ignore Webpack
+
+node_modules/
