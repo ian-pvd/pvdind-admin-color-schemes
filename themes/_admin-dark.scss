@@ -1,0 +1,203 @@
+/**
+ * WordPress Admin Dark Style Overrides
+ */
+
+
+/* Common Styles */
+.screen-reader-shortcut:focus {
+	background: #f1f1f1;
+	color: #0073aa;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+}
+
+.widget-top,
+.menu-item-handle,
+.widget-inside,
+#menu-settings-column .accordion-container,
+#menu-management .menu-edit,
+.manage-menus,
+table.widefat,
+.stuffbox,
+p.popular-tags,
+.widgets-holder-wrap,
+.wp-editor-container,
+.popular-tags,
+.feature-filter,
+.imgedit-group,
+.comment-ays {
+	border-color: $border-color;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+table.widefat,
+.wp-editor-container,
+.stuffbox,
+p.popular-tags,
+.widgets-holder-wrap,
+.popular-tags,
+.feature-filter,
+.imgedit-group,
+.comment-ays {
+	background: $panel-background;
+}
+
+html,
+body {
+	background: $body-background;
+	color: $text-color;
+}
+
+/* @WPNOTE - Any change to the default link style must be applied to button-link too. */
+a {
+	color: $link;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $link-focus;
+	}
+}
+
+a:focus,
+a:focus .media-icon img,
+.wp-person a:focus .gravatar {
+	color: $link-focus;
+	box-shadow:
+		0 0 0 1px fade-out( $link-focus, .2),
+		0 0 2px 1px fade-out( $highlight-color, .5);
+}
+
+.ie8 a:focus {
+	outline-color: $link-focus;
+}
+
+h1 {
+	color: $text-header-color;
+}
+
+h2,
+h3 {
+	color: darken( $text-header-color, 5%);
+}
+
+kbd,
+code {
+	background: #eaeaea;
+	background: rgba(0,0,0,0.07);
+}
+
+.subsubsub {
+	color: $text-header-color;
+}
+
+.subsubsub a .count,
+.subsubsub a.current .count {
+	color: darken( $text-header-color, 10% );
+}
+
+.widefat thead th,
+.widefat thead td {
+	border-bottom-color: $border-color;
+}
+
+.widefat tfoot th,
+.widefat tfoot td {
+	border-top-color: $border-color;
+}
+
+.subtitle {
+	color: darken( $text-header-color, 10% );
+}
+
+.wrap .add-new-h2, /* deprecated */
+.wrap .add-new-h2:active, /* deprecated */
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+	border-color: $button-border;
+	background: $button-background;
+	color: $button-text; /* some of these controls are button elements and don't inherit from links */
+}
+
+.wrap .add-new-h2:hover, /* deprecated */
+.wrap .page-title-action:hover {
+	color: $menu-text;
+	background: lighten( $button-color, 3% );
+	border-color: darken( $button-color, 15% );
+}
+
+/* lower specificity: color needs to be overridden by :hover and :active */
+.page-title-action:focus {
+	color: $link;
+}
+
+.wrap .page-title-action:focus {
+	border-color: fade-out( $highlight-color, 0.2);
+	box-shadow: 0 0 2px fade-out( $highlight-color, .5);
+}
+
+.wp-dialog {
+	background-color: $panel-background;
+}
+
+.widgets-chooser ul,
+#widgets-left .widget-in-question .widget-top,
+#available-widgets .widget-top:hover,
+div#widgets-right .widget-top:hover,
+#widgets-left .widget-top:hover {
+	border-color: $highlight-color;
+}
+
+.sorthelper {
+	background-color: $panel-background;
+}
+
+.ac_match,
+.subsubsub a.current {
+	color: $text-color;
+}
+
+.striped > tbody > :nth-child(odd),
+ul.striped > :nth-child(odd),
+.alternate {
+	background-color: darken( $base-color, 2%);
+}
+
+.bar {
+	background-color: #e8e8e8;
+	border-right-color: #99d;
+}
+
+/* Helper classes for plugins to leverage the active WordPress color scheme */
+
+.highlight {
+	background-color: #e4f2fd;
+	color: #000;
+}
+
+.wp-ui-primary {
+	color: #fff;
+	background-color: #32373c;
+}
+.wp-ui-text-primary {
+	color: #32373c;
+}
+
+.wp-ui-highlight {
+	color: #fff;
+	background-color: #1e8cbe;
+}
+.wp-ui-text-highlight {
+	color: #1e8cbe;
+}
+
+.wp-ui-notification {
+	color: #fff;
+	background-color: #d54e21;
+}
+.wp-ui-text-notification {
+	color: #d54e21;
+}
+
+.wp-ui-text-icon {
+	color: #82878c; /* same as new icons */
+}
