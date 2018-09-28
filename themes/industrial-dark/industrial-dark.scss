@@ -19,8 +19,8 @@ $notification-color: #7E542A;
 $body-background: #181A18;
 $highlight-background: #F7FCF7;
 
-$link: $highlight-color;
-$link-focus: #3FA63F;
+$link: #3FA63F;
+$link-focus: saturate( lighten( $link, 5% ), 5%);//#3FA63F;
 
 $button-color: #3D8E3D;
 $button-border-focus: lighten( $highlight-color, 25% );
