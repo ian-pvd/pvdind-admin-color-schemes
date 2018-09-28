@@ -17,6 +17,7 @@ $link: #0073aa !default;
 $link-focus: lighten( $link, 10% ) !default;
 
 $button-color: $highlight-color !default;
+$button-border-focus: lighten($highlight-color, 25%) !default;
 $form-checked: $highlight-color !default;
 
 

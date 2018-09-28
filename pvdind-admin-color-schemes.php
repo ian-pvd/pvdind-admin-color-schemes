@@ -55,8 +55,8 @@ class PVD_Color_Schemes {
 		wp_admin_css_color(
 			'industrial', __( 'Industrial', 'pvd_colors' ),
 			plugins_url( "themes/industrial/colors$suffix.css", __FILE__ ),
-			array( '#1F2C39', '#242824', '#1abc9c', '#f39c12' ),
-			array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' )
+			array( '#242824', '#386F38', '#3FA63F', '#F1F2F1' ),
+			array( 'base' => '#F1F2F1', 'focus' => '#FFF', 'current' => '#FFF' )
 		);
 
 	}
