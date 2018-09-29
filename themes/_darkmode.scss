@@ -11,12 +11,12 @@
   position: relative;
 }
 
-.color-option.selected input[value="industrial"] ~ table::before,
-.color-option:hover input[value="industrial"] ~ table::before {
+.color-option.selected input[value="-dark"] ~ table::before,
+.color-option:hover input[value="-dark"] ~ table::before {
   background: rgba(0,0,0,0.75);
 }
 
-input[value="industrial"] ~ table::before {
+input[value="-dark"] ~ table::before {
   background: rgba(0,0,0,0.667);
   content: '';
   display: block;
@@ -28,13 +28,13 @@ input[value="industrial"] ~ table::before {
   z-index: 0;
 }
 
-input[value="industrial"],
-[for*="industrial"],
-input[value="industrial"] ~ table tbody {
+input[value="-dark"],
+[for*="-dark"],
+input[value="-dark"] ~ table tbody {
   position: relative;
   z-index: 1;
 }
 
-[for*="industrial"] {
+[for*="-dark"] {
   color: lightgray;
 }
