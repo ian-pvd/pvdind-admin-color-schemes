@@ -14,7 +14,7 @@ const WebpackRtlPlugin = require('webpack-rtl-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    flat: './themes/flat/index.js'
+    industrial: './themes/industrial/index.js'
   },
   output: {
     filename: '[name]/[name].js',
