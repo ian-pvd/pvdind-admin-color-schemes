@@ -8,9 +8,9 @@
 
 /* Core Colors */
 
-$text-color: #F1F2F1;
+$text-color: #B2B7B2;
 $base-color: #181A18;//#0C0D0C;
-$icon-color: darken($text-color, 25%);
+$icon-color: darken($text-color, 24%);
 $highlight-color: #386F38;
 $notification-color: #7E542A;
 
@@ -19,11 +19,11 @@ $notification-color: #7E542A;
 $body-background: $base-color;//#181A18;
 $highlight-background: #F7FCF7;
 
-$link: #3FA63F;
-$link-focus: saturate( lighten( $link, 5% ), 5%);//#3FA63F;
+$link: #3F693F;//#3FA63F;
+$link-focus: saturate( lighten( $link, 3% ), 3%);//#3FA63F;
 
 $button-color: #3D8E3D;
-$button-border-focus: lighten( $highlight-color, 25% );
+$button-border-focus: lighten( $highlight-color, 24% );
 $form-checked: $highlight-color;
 
 /* Advanced Color Variable Options */
@@ -43,8 +43,8 @@ $menu-background: $base-color !default;
 // $menu-current-background: $menu-highlight-background !default;
 
 // $menu-submenu-text: mix( $base-color, $text-color, 30% ) !default;
-$menu-submenu-background: darken( $base-color, 5% );
-$menu-submenu-background-alt: desaturate( lighten( $menu-background, 5% ), 5% );
+$menu-submenu-background: darken( $base-color, 6% );
+$menu-submenu-background-alt: desaturate( lighten( $menu-background, 3% ), 3% );
 
 $menu-submenu-focus-text: $link-focus;
 // $menu-submenu-current-text: $text-color !default;
@@ -72,8 +72,8 @@ $table-background-active: $highlight-background;
 
 /* Dark Theme Variables */
 
-$text-header-color: darken( $text-color, 10% ) !default;
-$panel-background: #242824;// lighten( $body-background, 5% ) !default;
+$text-header-color: darken( $text-color, 3% ) !default;
+$panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
 $border-color: $base-color;
 $cancel-color: #A82A00;
 
