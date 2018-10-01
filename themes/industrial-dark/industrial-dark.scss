@@ -16,7 +16,7 @@ $notification-color: #7E542A;
 
 /* Global Admin Colors */
 
-$body-background: #181A18;
+$body-background: $base-color;//#181A18;
 $highlight-background: #F7FCF7;
 
 $link: #3FA63F;
@@ -75,6 +75,7 @@ $table-background-active: $highlight-background;
 $text-header-color: darken( $text-color, 10% ) !default;
 $panel-background: #242824;// lighten( $body-background, 5% ) !default;
 $border-color: $base-color;
+$cancel-color: #A82A00;
 
 // Secondary Action Buttons
 $button-text: $highlight-color !default;

@@ -81,28 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./themes/industrial/index.js");
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ "./themes/industrial/index.js":
+/*!************************************!*\
+  !*** ./themes/industrial/index.js ***!
+  \************************************/
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _industrial_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _industrial_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_industrial_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* Industrial Theme JS */
-
-// Import Industrial Styles
-
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _industrial_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./industrial.scss */ \"./themes/industrial/industrial.scss\");\n/* harmony import */ var _industrial_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_industrial_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* Industrial Theme JS */\n\n// Import Industrial Styles\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90aGVtZXMvaW5kdXN0cmlhbC9pbmRleC5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3RoZW1lcy9pbmR1c3RyaWFsL2luZGV4LmpzPzMzZjQiXSwic291cmNlc0NvbnRlbnQiOlsiLyogSW5kdXN0cmlhbCBUaGVtZSBKUyAqL1xuXG4vLyBJbXBvcnQgSW5kdXN0cmlhbCBTdHlsZXNcbmltcG9ydCAnLi9pbmR1c3RyaWFsLnNjc3MnO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./themes/industrial/index.js\n");
 
 /***/ }),
-/* 1 */
+
+/***/ "./themes/industrial/industrial.scss":
+/*!*******************************************!*\
+  !*** ./themes/industrial/industrial.scss ***!
+  \*******************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+eval("// extracted by mini-css-extract-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90aGVtZXMvaW5kdXN0cmlhbC9pbmR1c3RyaWFsLnNjc3MuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi90aGVtZXMvaW5kdXN0cmlhbC9pbmR1c3RyaWFsLnNjc3M/ZTQ3MSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW4iXSwibWFwcGluZ3MiOiJBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./themes/industrial/industrial.scss\n");
 
 /***/ })
-/******/ ]);
+
+/******/ });

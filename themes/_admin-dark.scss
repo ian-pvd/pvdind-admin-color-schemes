@@ -5,9 +5,9 @@
 
 /* Common Styles */
 .screen-reader-shortcut:focus {
-	background: #f1f1f1;
-	color: #0073aa;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	// background: #f1f1f1;
+	// color: #0073aa;
+	// box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
 }
 
 .widget-top,
@@ -26,10 +26,13 @@ p.popular-tags,
 .imgedit-group,
 .comment-ays {
 	border-color: $border-color;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	// box-shadow: 0 1px 1px rgba(0,0,0,0.04);
 }
 
-table.widefat,
+table.widefat {
+	background: $body-background;
+}
+
 .wp-editor-container,
 .stuffbox,
 p.popular-tags,
@@ -47,7 +50,6 @@ body {
 	color: $text-color;
 }
 
-/* @WPNOTE - Any change to the default link style must be applied to button-link too. */
 a {
 	color: $link;
 
@@ -82,8 +84,8 @@ h3 {
 
 kbd,
 code {
-	background: #eaeaea;
-	background: rgba(0,0,0,0.07);
+	// background: #eaeaea;
+	// background: rgba(0,0,0,0.07);
 }
 
 .subsubsub {
@@ -158,46 +160,92 @@ div#widgets-right .widget-top:hover,
 .striped > tbody > :nth-child(odd),
 ul.striped > :nth-child(odd),
 .alternate {
-	background-color: darken( $base-color, 2%);
+	background-color: darken( $body-background, 2%);
 }
 
-.bar {
-	background-color: #e8e8e8;
-	border-right-color: #99d;
+/* Common Styles - Text */
+
+.widget .widget-top,
+.menu-item-handle {
+	background: $base-color;
+	color: $text-color;
 }
 
-.highlight {
-	background-color: #e4f2fd;
-	color: #000;
+.postbox .hndle,
+.stuffbox .hndle {
+	// border-bottom-color: #eee;
 }
 
-.wp-ui-primary {
-	color: #fff;
-	background-color: #32373c;
+.quicktags,
+.search {
+	// background-color: #ccc;
+	// color: #000;
 }
 
-.wp-ui-text-primary {
-	color: #32373c;
+.welcome-panel .welcome-panel-close:before,
+.try-gutenberg-panel .try-gutenberg-panel-close:before,
+.tagchecklist .ntdelbutton .remove-tag-icon:before,
+#bulk-titles div a:before,
+.notice-dismiss:before {
+	background: none;
+	color: $icon-color;
 }
 
-.wp-ui-highlight {
-	color: #fff;
-	background-color: #1e8cbe;
+.tagchecklist .ntdelbutton .remove-tag-icon:before {
+	color: $icon-color;
 }
 
-.wp-ui-text-highlight {
-	color: #1e8cbe;
+.welcome-panel .welcome-panel-close:hover:before,
+.welcome-panel .welcome-panel-close:focus:before,
+.tagchecklist .ntdelbutton:hover .remove-tag-icon:before,
+.tagchecklist .ntdelbutton:focus .remove-tag-icon:before,
+#bulk-titles div a:hover:before,
+#bulk-titles div a:focus:before {
+	color: $cancel-color;
 }
 
-.wp-ui-notification {
-	color: #fff;
-	background-color: #d54e21;
+.tagchecklist .ntdelbutton:focus .remove-tag-icon:before {
+	// box-shadow:
+	// 	0 0 0 1px #5b9dd9,
+	// 	0 0 2px 1px rgba(30, 140, 190, .8);
 }
 
-.wp-ui-text-notification {
-	color: #d54e21;
+.howto {
+	// color: #666;
 }
 
-.wp-ui-text-icon {
-	color: #82878c;
+hr {
+	// border-top-color: #ddd;
+	// border-bottom-color: #fafafa;
+}
+
+.row-actions span.delete a,
+.row-actions span.trash a,
+.row-actions span.spam a,
+.plugins a.delete,
+#all-plugins-table .plugins a.delete,
+#search-plugins-table .plugins a.delete,
+.submitbox .submitdelete,
+#media-items a.delete,
+#media-items a.delete-permanently,
+#nav-menu-footer .menu-delete,
+#delete-link a.delete {
+	color: $cancel-color;
+}
+
+abbr.required,
+span.required,
+.file-error,
+.row-actions .delete a:hover,
+.row-actions .trash a:hover,
+.row-actions .spam a:hover,
+.plugins a.delete:hover,
+#all-plugins-table .plugins a.delete:hover,
+#search-plugins-table .plugins a.delete:hover,
+.submitbox .submitdelete:hover,
+#media-items a.delete:hover,
+#media-items a.delete-permanently:hover,
+#nav-menu-footer .menu-delete:hover,
+#delete-link a.delete:hover {
+	color: saturate( lighten( $cancel-color, 5% ), 5%);
 }
