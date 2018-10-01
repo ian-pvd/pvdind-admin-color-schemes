@@ -75,12 +75,17 @@ $table-background-active: $highlight-background;
 $text-header-color: darken( $text-color, 3% ) !default;
 $panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
 $border-color: $base-color;
-$cancel-color: #A82A00;
 
-// Secondary Action Buttons
-$button-text: $highlight-color !default;
-$button-background: $panel-background !default;
-$button-border: fade-out( $border-color, 0.2 ) !default;
+$notice-dismiss: #A82A00;
+$notice-success: $highlight-color;
+$notice-warning: #DF7C1F;
+$notice-error: #DF0F1F;
+$notice-info: #759375;
+
+// Inputs & Action Buttons
+$input-text: $highlight-color !default;
+$input-background: lighten( $panel-background, 3% ) !default;
+$input-border: darken( $base-color, 3% ) !default;
 
 /* Dark Theme Styles */
 @import '../admin-dark.scss';
