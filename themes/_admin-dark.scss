@@ -109,23 +109,22 @@ code {
 	color: darken( $text-header-color, 10% );
 }
 
-.wrap .add-new-h2, /* deprecated */
-.wrap .add-new-h2:active, /* deprecated */
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
 .wrap .page-title-action,
 .wrap .page-title-action:active {
 	border-color: $button-border;
 	background: $button-background;
-	color: $button-text; /* some of these controls are button elements and don't inherit from links */
+	color: $button-text;
 }
 
-.wrap .add-new-h2:hover, /* deprecated */
+.wrap .add-new-h2:hover,
 .wrap .page-title-action:hover {
 	color: $menu-text;
 	background: lighten( $button-color, 3% );
 	border-color: darken( $button-color, 15% );
 }
 
-/* lower specificity: color needs to be overridden by :hover and :active */
 .page-title-action:focus {
 	color: $link;
 }
@@ -167,8 +166,6 @@ ul.striped > :nth-child(odd),
 	border-right-color: #99d;
 }
 
-/* Helper classes for plugins to leverage the active WordPress color scheme */
-
 .highlight {
 	background-color: #e4f2fd;
 	color: #000;
@@ -178,6 +175,7 @@ ul.striped > :nth-child(odd),
 	color: #fff;
 	background-color: #32373c;
 }
+
 .wp-ui-text-primary {
 	color: #32373c;
 }
@@ -186,6 +184,7 @@ ul.striped > :nth-child(odd),
 	color: #fff;
 	background-color: #1e8cbe;
 }
+
 .wp-ui-text-highlight {
 	color: #1e8cbe;
 }
@@ -194,10 +193,11 @@ ul.striped > :nth-child(odd),
 	color: #fff;
 	background-color: #d54e21;
 }
+
 .wp-ui-text-notification {
 	color: #d54e21;
 }
 
 .wp-ui-text-icon {
-	color: #82878c; /* same as new icons */
+	color: #82878c;
 }
