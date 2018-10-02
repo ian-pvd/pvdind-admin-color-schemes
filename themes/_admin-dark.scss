@@ -145,7 +145,7 @@ code {
 #available-widgets .widget-top:hover,
 div#widgets-right .widget-top:hover,
 #widgets-left .widget-top:hover {
-	border-color: $highlight-color;
+	border-color: $input-border;
 }
 
 .sorthelper {
@@ -167,7 +167,7 @@ ul.striped > :nth-child(odd),
 
 .widget .widget-top,
 .menu-item-handle {
-	background: $base-color;
+	background: $input-background;
 	color: $text-color;
 }
 
