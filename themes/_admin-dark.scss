@@ -74,12 +74,12 @@ a:focus .media-icon img,
 }
 
 h1 {
-	color: $text-header-color;
+	color: $text-color-alt;
 }
 
 h2,
 h3 {
-	color: darken( $text-header-color, 5%);
+	color: darken( $text-color-alt, 5%);
 }
 
 kbd,
@@ -89,12 +89,12 @@ code {
 }
 
 .subsubsub {
-	color: $text-header-color;
+	color: $text-color-alt;
 }
 
 .subsubsub a .count,
 .subsubsub a.current .count {
-	color: darken( $text-header-color, 10% );
+	color: darken( $text-color-alt, 10% );
 }
 
 .widefat thead th,
@@ -108,7 +108,7 @@ code {
 }
 
 .subtitle {
-	color: darken( $text-header-color, 10% );
+	color: darken( $text-color-alt, 10% );
 }
 
 .wrap .add-new-h2,
@@ -160,7 +160,7 @@ div#widgets-right .widget-top:hover,
 .striped > tbody > :nth-child(odd),
 ul.striped > :nth-child(odd),
 .alternate {
-	background-color: darken( $body-background, 1%);
+	background-color: $table-background-alt;
 }
 
 /* Common Styles - Text */
@@ -453,3 +453,83 @@ div.error {
 }
 
 /* Common Styles - Header */
+
+#screen-meta {
+	background-color: $panel-background;
+	border-color: $border-color;
+	// box-shadow: 0 1px 0 rgba(0,0,0,.025);
+}
+
+#screen-options-link-wrap,
+#contextual-help-link-wrap {
+	border-color: $border-color;
+	background: $panel-background;
+	// box-shadow: 0 1px 1px -1px rgba(0,0,0,0.1);
+}
+
+#screen-meta-links .show-settings {
+	color: $text-color;
+}
+
+#screen-meta-links .show-settings:hover,
+#screen-meta-links .show-settings:active,
+#screen-meta-links .show-settings:focus {
+	color: $text-color-focus;
+}
+
+#screen-meta-links .show-settings:after {
+	color: $icon-color;
+}
+
+#contextual-help-back {
+	border-color: $border-color;
+	background: $table-background-alt;
+}
+
+.contextual-help-tabs a:hover {
+	color: $link-focus;
+}
+
+.contextual-help-tabs .active {
+	border-left-color: $highlight-color;
+	background: $table-background-alt;
+}
+
+.contextual-help-tabs .active a {
+	border-color: $border-color;
+	color: $highlight-color;
+}
+
+.widefat th,
+.widefat td {
+	color: $text-color-alt;
+}
+
+.widefat thead tr th,
+.widefat thead tr td,
+.widefat tfoot tr th,
+.widefat tfoot tr td {
+	color: $text-color;
+}
+
+.widefat p,
+.widefat ol,
+.widefat ul {
+	color: $text-color-alt;
+}
+
+.metabox-holder .postbox-container .empty-container {
+	// border-color: #b4b9be;
+}
+
+.metabox-holder .postbox-container .empty-container:after {
+	// color: #ccc;
+}
+
+.sortable-placeholder {
+	// border-color: #b4b9be;
+}
+
+.temp-border {
+	// border-color: #ccc;
+}

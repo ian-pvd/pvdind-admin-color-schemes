@@ -72,9 +72,11 @@ $table-background-active: $highlight-background;
 
 /* Dark Theme Variables */
 
-$text-header-color: darken( $text-color, 3% ) !default;
+$text-color-focus: mix($text-color, $link-focus) !default;
+$text-color-alt: darken( $text-color, 3% ) !default;
 $panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
 $border-color: $base-color;
+$table-background-alt: darken( $body-background, 1%) !default;
 
 $notice-dismiss: #A82A00;
 $notice-success: $highlight-color;
@@ -100,4 +102,8 @@ $input-border: darken( $base-color, 3% ) !default;
 .postbox .hndle,
 .stuffbox .hndle {
 	border-color: $border-color;
+}
+
+.wp-core-ui .button.show-settings {
+	box-shadow: 0 1px 0 $border-color;
 }
