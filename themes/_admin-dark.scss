@@ -64,9 +64,7 @@ a:focus,
 a:focus .media-icon img,
 .wp-person a:focus .gravatar {
 	color: $link-focus;
-	box-shadow:
-		0 0 0 1px fade-out( $link-focus, 0.3),
-		0 0 2px 1px fade-out( $highlight-color, 0.9);
+	box-shadow: $box-shadow;
 }
 
 .ie8 a:focus {
@@ -726,9 +724,7 @@ div.star-holder .star-rating {
 }
 
 .js .postbox .handlediv:focus .toggle-indicator:before {
-	box-shadow:
-		0 0 0 1px #5b9dd9,
-		0 0 2px 1px rgba(30, 140, 190, .8);
+	box-shadow: $box-shadow;
 }
 
 #template textarea {
@@ -747,9 +743,7 @@ div.star-holder .star-rating {
 
 [role="treeitem"] .folder-label.focus {
 	color: $base-color;
-	box-shadow:
-		0 0 0 1px $link-focus,
-		0 0 2px 1px fade-out( $link-focus, 0.8 );
+	box-shadow: $box-shadow;
 }
 
 [role="treeitem"].hover,
@@ -779,11 +773,11 @@ div.star-holder .star-rating {
 .item-edit,
 .toggle-indicator,
 .accordion-section-title:after {
-	color: #72777c;
+	color: $border-color;
 }
 
 .widget-action {
-	color: #555d66; /* #fafafa background in the Widgets screen */
+	// color: #555d66; /* #fafafa background in the Widgets screen */
 }
 
 .widget-top:hover .widget-action,
@@ -796,104 +790,102 @@ div.star-holder .star-rating {
 .item-edit:focus,
 .sidebar-name:hover .toggle-indicator,
 .accordion-section-title:hover:after {
-	color: #23282d;
+	// color: #23282d;
 }
 
 .widget-top .widget-action:focus .toggle-indicator:before {
-	box-shadow:
-		0 0 0 1px #5b9dd9,
-		0 0 2px 1px rgba(30,140,190,.8);
+	box-shadow: $box-shadow;
 }
 
 .accordion-section {
-	border-bottom: 1px solid #ddd;
+	// border-bottom-color: #ddd;
 }
 
 .accordion-section.open:hover {
-	border-bottom-color: #ddd;
+	// border-bottom-color: #ddd;
 }
 
 .accordion-section-content {
-	background: #fff;
+	// background: #fff;
 }
 
 .accordion-section-title {
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
+	// border-left-color: #ddd;
+	// border-right-color: #ddd;
 }
 
 .accordion-section-title:hover:after,
 .accordion-section-title:focus:after {
-	border-color: #a0a5aa transparent;
+	// border-color: #a0a5aa transparent;
 }
 
 .control-section .accordion-section-title,
 .customize-pane-child .accordion-section-title {
-	background: #fff;
+	// background: #fff;
 }
 
 .js .control-section:hover .accordion-section-title,
 .js .control-section .accordion-section-title:hover,
 .js .control-section.open .accordion-section-title,
 .js .control-section .accordion-section-title:focus {
-	color: #23282d;
-	background: #f5f5f5;
+	// color: #23282d;
+	// background: #f5f5f5;
 }
 
 .control-section.open .accordion-section-title {
-	border-bottom: 1px solid #ddd;
+	// border-bottom: 1px solid #ddd;
 }
 
 @media only screen and (min-width: 600px) {
 	.my-sites.striped li {
-		background-color: #fff;
+		background-color: $table-background;
 	}
 
 	.my-sites.striped li:after {
-		background: #ccc;
+		background: $border-color;
 	}
 
 }
 
 @media only screen and (min-width: 600px) and (max-width: 699px) {
 	.my-sites.striped li {
-		background-color: #fff;
+		background-color: $table-background;
 	}
 
 	.my-sites li:nth-of-type(4n+1),
 	.my-sites li:nth-of-type(4n+2) {
-		background-color: #f9f9f9;
+		background-color: $table-background-alt;
 	}
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1199px) {
 	.my-sites li {
-		background-color: #fff;
+		background-color: $table-background;
 	}
 
 	.my-sites li:nth-of-type(6n+1),
 	.my-sites li:nth-of-type(6n+2),
 	.my-sites li:nth-of-type(6n+3) {
-		background-color: #f9f9f9;
+		background-color: $table-background-alt;
 	}
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 	.my-sites li {
-		background-color: #fff;
+		background-color: $table-background;
 	}
 
 	.my-sites li:nth-of-type(8n+1),
 	.my-sites li:nth-of-type(8n+2),
 	.my-sites li:nth-of-type(8n+3),
 	.my-sites li:nth-of-type(8n+4) {
-		background-color: #f9f9f9;
+		background-color: $table-background-alt;
 	}
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
 	.my-sites li {
-		background-color: #fff;
+		background-color: $table-background;
 	}
 
 	.my-sites li:nth-of-type(10n+1),
@@ -901,13 +893,13 @@ div.star-holder .star-rating {
 	.my-sites li:nth-of-type(10n+3),
 	.my-sites li:nth-of-type(10n+4),
 	.my-sites li:nth-of-type(10n+5) {
-		background-color: #f9f9f9;
+		background-color: $table-background-alt;
 	}
 }
 
 @media only screen and (min-width: 1600px) {
 	.my-sites li {
-		background-color: #fff;
+		background-color: $table-background;
 	}
 
 	.my-sites li:nth-of-type(12n+1),
@@ -916,7 +908,7 @@ div.star-holder .star-rating {
 	.my-sites li:nth-of-type(12n+4),
 	.my-sites li:nth-of-type(12n+5),
 	.my-sites li:nth-of-type(12n+6) {
-		background-color: #f9f9f9;
+		background-color: $table-background-alt;
 	}
 }
 
@@ -933,7 +925,7 @@ div.star-holder .star-rating {
 	div.star-holder,
 	div.star-holder .star-rating {
 		// background: url(../images/stars-2x.png?ver=20121108) repeat-x bottom left;
-		background-size: 21px 37px;
+		// background-size: 21px 37px;
 	}
 
 	.spinner {
@@ -944,7 +936,7 @@ div.star-holder .star-rating {
 @media screen and ( max-width: 782px ) {
 
 	#templateside > ul {
-		border-left: 1px solid #ddd;
+		// border-left-color: #ddd;
 	}
 }
 
@@ -953,6 +945,6 @@ div.star-holder .star-rating {
 	h1 .nav-tab,
 	h2 .nav-tab,
 	h3 .nav-tab {
-		border-bottom: 1px solid #ccc;
+		border-bottom-color: $border-color;
 	}
 }
