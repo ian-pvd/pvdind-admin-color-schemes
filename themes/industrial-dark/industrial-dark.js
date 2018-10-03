@@ -101,8 +101,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Make Changes to TinyMCE iFrame
-const theEditor = document.getElementById('content_ifr')
-  .contentWindow.document.getElementById('tinymce');
+// const theEditor = document.getElementById('content_ifr')
+//   .contentWindow.document.getElementById('tinymce');
 
 
 /***/ }),

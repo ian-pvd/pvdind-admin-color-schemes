@@ -2,6 +2,7 @@
  * WordPress Admin Dark Style Overrides
  */
 
+@import 'animations';
 
 /* Common Styles */
 .screen-reader-shortcut:focus {
@@ -26,7 +27,7 @@ p.popular-tags,
 .imgedit-group,
 .comment-ays {
 	border-color: $border-color;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 table.widefat {
@@ -185,7 +186,6 @@ ul.striped > :nth-child(odd),
 .tagchecklist .ntdelbutton .remove-tag-icon:before,
 #bulk-titles div a:before,
 .notice-dismiss:before {
-	background: none;
 	color: $icon-color;
 }
 
@@ -252,7 +252,7 @@ span.required,
 
 #major-publishing-actions {
 	border-top-color: $border-color;
-	background: $input-background;//#f5f5f5;
+	background: $input-background;
 }
 
 .wp-filter {
@@ -374,9 +374,7 @@ div.error {
 }
 
 .notice-dismiss:focus {
-	box-shadow:
-		0 0 0 1px $text-color,
-		0 0 2px 1px fade-out( $text-color, 0.8 );
+	box-shadow: $box-shadow;
 }
 
 .ie8 .notice-dismiss:focus {
@@ -728,17 +726,17 @@ div.star-holder .star-rating {
 }
 
 #template textarea {
-	background: #f9f9f9;
+	// background: #f9f9f9;
 }
 
 #template textarea,
 #template .CodeMirror {
-	border: 1px solid #ddd;
+	// border-color: #ddd;
 }
 
 #templateside > ul {
-	background-color: #f7f7f7;
-	border-color: #ddd;
+	// background-color: #f7f7f7;
+	// border-color: #ddd;
 }
 
 [role="treeitem"] .folder-label.focus {

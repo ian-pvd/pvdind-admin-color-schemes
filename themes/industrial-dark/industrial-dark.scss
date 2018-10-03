@@ -8,19 +8,19 @@
 
 /* Core Colors */
 
-$text-color: #A2A8A2;//#B2B7B2;
-$base-color: #181A18;//#0C0D0C;
+$text-color: #A2A8A2;
+$base-color: #181A18;
 $icon-color: darken($text-color, 24%);
 $highlight-color: #386F38;
 $notification-color: #7E542A;
 
 /* Global Admin Colors */
 
-$body-background: $base-color;//#181A18;
+$body-background: $base-color;
 $highlight-background: #F7FCF7;
 
-$link: #3F693F;//#3FA63F;
-$link-focus: saturate( lighten( $link, 3% ), 3%);//#3FA63F;
+$link: #3F693F;
+$link-focus: saturate( lighten( $link, 3% ), 3%);
 
 $button-color: #3D8E3D;
 $button-border-focus: lighten( $highlight-color, 24% );
@@ -28,41 +28,41 @@ $form-checked: $highlight-color;
 
 /* Advanced Color Variable Options */
 
-// $menu-text: $text-color !default;
-// $menu-icon: $icon-color !default;
-// $menu-icon-focus: $text-color !default;
+$menu-text: $text-color !default;
+$menu-icon: $icon-color !default;
+$menu-icon-focus: $text-color !default;
 $menu-background: $base-color !default;
 
-// $menu-highlight-text: $text-color !default;
-// $menu-highlight-icon: $text-color !default;
-// $menu-highlight-icon-focus: $text-color !default;
-// $menu-highlight-background: $highlight-color !default;
+$menu-highlight-text: $text-color !default;
+$menu-highlight-icon: $text-color !default;
+$menu-highlight-icon-focus: $text-color !default;
+$menu-highlight-background: $highlight-color !default;
 
-// $menu-current-text: $menu-highlight-text !default;
-// $menu-current-icon: $menu-highlight-icon !default;
-// $menu-current-background: $menu-highlight-background !default;
+$menu-current-text: $menu-highlight-text !default;
+$menu-current-icon: $menu-highlight-icon !default;
+$menu-current-background: $menu-highlight-background !default;
 
-// $menu-submenu-text: mix( $base-color, $text-color, 30% ) !default;
+$menu-submenu-text: mix( $base-color, $text-color, 30% ) !default;
 $menu-submenu-background: darken( $base-color, 6% );
 $menu-submenu-background-alt: desaturate( lighten( $menu-background, 3% ), 3% );
 
 $menu-submenu-focus-text: $link-focus;
-// $menu-submenu-current-text: $text-color !default;
+$menu-submenu-current-text: $text-color !default;
 
-// $menu-bubble-text: $text-color !default;
-// $menu-bubble-background: $notification-color !default;
-// $menu-bubble-current-text: $text-color !default;
-// $menu-bubble-current-background: $menu-submenu-background !default;
+$menu-bubble-text: $text-color !default;
+$menu-bubble-background: $notification-color !default;
+$menu-bubble-current-text: $text-color !default;
+$menu-bubble-current-background: $menu-submenu-background !default;
 
-// $menu-collapse-text: $menu-icon !default;
-// $menu-collapse-icon: $menu-icon !default;
+$menu-collapse-text: $menu-icon !default;
+$menu-collapse-icon: $menu-icon !default;
 $menu-collapse-focus-text: $link-focus;
-// $menu-collapse-focus-icon: $menu-highlight-icon !default;
+$menu-collapse-focus-icon: $menu-highlight-icon !default;
 
-// $adminbar-avatar-frame: lighten( $menu-background, 7% ) !default;
-// $adminbar-input-background: lighten( $menu-background, 7% ) !default;
+$adminbar-avatar-frame: lighten( $menu-background, 7% ) !default;
+$adminbar-input-background: lighten( $menu-background, 7% ) !default;
 
-// $menu-customizer-text: mix( $base-color, $text-color, 40% ) !default;
+$menu-customizer-text: mix( $base-color, $text-color, 40% ) !default;
 
 $table-border-active: $highlight-color;
 $table-background-active: $highlight-background;
@@ -76,6 +76,7 @@ $border-color: darken( $base-color, 1.5% );
 $panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
 $table-background: lighten( $body-background, 1%) !default;
 $table-background-alt: darken( $body-background, 1%) !default;
+
 $text-color-alt: darken( $text-color, 6% ) !default;
 $text-color-focus: mix($text-color, $link-focus) !default;
 
@@ -90,23 +91,17 @@ $input-text: $highlight-color !default;
 $input-background: lighten( $panel-background, 3% ) !default;
 $input-border: darken( $base-color, 3% ) !default;
 
+// Highlights & Focus Shadows
 $box-shadow:
 	0 0 1px 1px fade-out( $link-focus, 0.3),
 	0 0 3px 1px fade-out( $highlight-color, 0.7);
 
-@keyframes spin {
-    from {
-    	transform:rotate( 0deg );
-    }
-
-    to {
-    	transform:rotate( 360deg );
-    }
-}
-
 /* Dark Theme Styles */
 @import '../admin-dark.scss';
 
+/* TODO: Move To Additional Dark Theme Partial */
+
+// Dashboard Welcome
 .try-gutenberg-panel,
 .welcome-panel,
 .postbox {
@@ -119,6 +114,7 @@ $box-shadow:
 	border-color: $border-color;
 }
 
+// Button "border" color
 .wp-core-ui .button.show-settings {
 	box-shadow: 0 1px 0 $border-color;
 }
