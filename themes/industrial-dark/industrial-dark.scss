@@ -28,57 +28,54 @@ $form-checked: $highlight-color;
 
 /* Advanced Color Variable Options */
 
-$menu-text: $text-color !default;
-$menu-icon: $icon-color !default;
-$menu-icon-focus: $text-color !default;
-$menu-background: $base-color !default;
+$menu-text: $text-color;
+$menu-icon: $icon-color;
+$menu-icon-focus: $text-color;
+$menu-background: $base-color;
 
-$menu-highlight-text: $text-color !default;
-$menu-highlight-icon: $text-color !default;
-$menu-highlight-icon-focus: $text-color !default;
-$menu-highlight-background: $highlight-color !default;
+$menu-highlight-text: $text-color;
+$menu-highlight-icon: $text-color;
+$menu-highlight-icon-focus: $text-color;
+$menu-highlight-background: $highlight-color;
 
-$menu-current-text: $menu-highlight-text !default;
-$menu-current-icon: $menu-highlight-icon !default;
-$menu-current-background: $menu-highlight-background !default;
+$menu-current-text: $menu-highlight-text;
+$menu-current-icon: $menu-highlight-icon;
+$menu-current-background: $menu-highlight-background;
 
-$menu-submenu-text: mix( $base-color, $text-color, 30% ) !default;
+$menu-submenu-text: mix( $base-color, $text-color, 30% );
 $menu-submenu-background: darken( $base-color, 6% );
 $menu-submenu-background-alt: desaturate( lighten( $menu-background, 3% ), 3% );
 
 $menu-submenu-focus-text: $link-focus;
-$menu-submenu-current-text: $text-color !default;
+$menu-submenu-current-text: $text-color;
 
-$menu-bubble-text: $text-color !default;
-$menu-bubble-background: $notification-color !default;
-$menu-bubble-current-text: $text-color !default;
-$menu-bubble-current-background: $menu-submenu-background !default;
+$menu-bubble-text: $text-color;
+$menu-bubble-background: $notification-color;
+$menu-bubble-current-text: $text-color;
+$menu-bubble-current-background: $menu-submenu-background;
 
-$menu-collapse-text: $menu-icon !default;
-$menu-collapse-icon: $menu-icon !default;
+$menu-collapse-text: $menu-icon;
+$menu-collapse-icon: $menu-icon;
 $menu-collapse-focus-text: $link-focus;
-$menu-collapse-focus-icon: $menu-highlight-icon !default;
+$menu-collapse-focus-icon: $menu-highlight-icon;
 
-$adminbar-avatar-frame: lighten( $menu-background, 7% ) !default;
-$adminbar-input-background: lighten( $menu-background, 7% ) !default;
+$adminbar-avatar-frame: lighten( $menu-background, 7% );
+$adminbar-input-background: lighten( $menu-background, 7% );
 
-$menu-customizer-text: mix( $base-color, $text-color, 40% ) !default;
+$menu-customizer-text: mix( $base-color, $text-color, 40% );
 
 $table-border-active: $highlight-color;
 $table-background-active: $highlight-background;
 
-/* Apply Colors to Default Style Rules */
-@import '../admin';
-
 /* Dark Theme Variables */
 
 $border-color: darken( $base-color, 1.5% );
-$panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
-$table-background: lighten( $body-background, 1%) !default;
-$table-background-alt: darken( $body-background, 1%) !default;
+$panel-background: desaturate( lighten( $body-background, 3% ), 3% );
+$table-background: lighten( $body-background, 1%);
+$table-background-alt: darken( $body-background, 1%);
 
-$text-color-alt: darken( $text-color, 6% ) !default;
-$text-color-focus: mix($text-color, $link-focus) !default;
+$text-color-alt: darken( $text-color, 6% );
+$text-color-focus: mix($text-color, $link-focus);
 
 $notice-dismiss: #A82A00;
 $notice-success: $highlight-color;
@@ -87,17 +84,20 @@ $notice-error: #DF0F1F;
 $notice-info: #759375;
 
 // Inputs & Action Buttons
-$input-text: $highlight-color !default;
-$input-background: lighten( $panel-background, 3% ) !default;
-$input-border: darken( $base-color, 3% ) !default;
+$input-text: $highlight-color;
+$input-background: lighten( $panel-background, 3% );
+$input-border: darken( $base-color, 3% );
 
 // Highlights & Focus Shadows
 $box-shadow:
 	0 0 1px 1px fade-out( $link-focus, 0.3),
 	0 0 3px 1px fade-out( $highlight-color, 0.7);
 
+/* Apply Colors to Default Style Rules */
+@import '../admin';
+
 /* Dark Theme Styles */
-@import '../admin-dark.scss';
+@import '../admin-dark';
 
 /* TODO: Move To Additional Dark Theme Partial */
 

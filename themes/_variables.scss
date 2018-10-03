@@ -61,3 +61,29 @@ $menu-customizer-text: mix( $base-color, $text-color, 40% ) !default;
 
 $table-border-active: $highlight-color !default;
 $table-background-active: lighten($highlight-color, 65%) !default;
+
+/* Dark Theme Variables */
+
+$border-color: darken( $base-color, 1.5% ) !default;
+$panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
+$table-background: lighten( $body-background, 1%) !default;
+$table-background-alt: darken( $body-background, 1%) !default;
+
+$text-color-alt: darken( $text-color, 6% ) !default;
+$text-color-focus: mix($text-color, $link-focus) !default;
+
+$notice-dismiss: #A82A00 !default;
+$notice-success: $highlight-color !default;
+$notice-warning: #DF7C1F !default;
+$notice-error: #DF0F1F !default;
+$notice-info: #759375 !default;
+
+// Inputs & Action Buttons
+$input-text: $highlight-color;
+$input-background: lighten( $panel-background, 3% ) !default;
+$input-border: darken( $base-color, 3% ) !default;
+
+// Highlights & Focus Shadows
+$box-shadow:
+	0 0 1px 1px fade-out( $link-focus, 0.3),
+	0 0 3px 1px fade-out( $highlight-color, 0.7) !default;

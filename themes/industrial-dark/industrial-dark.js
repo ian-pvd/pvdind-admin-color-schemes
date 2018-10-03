@@ -81,35 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./themes/industrial-dark/index.js");
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */
+/******/ ({
+
+/***/ "./themes/industrial-dark/index.js":
+/*!*****************************************!*\
+  !*** ./themes/industrial-dark/index.js ***!
+  \*****************************************/
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _industrial_dark_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
-/* harmony import */ var _industrial_dark_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_industrial_dark_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* Industrial Dark Theme JS */
-
-// Import Industrial Dark Styles
-
-
-// Make Changes to TinyMCE iFrame
-// const theEditor = document.getElementById('content_ifr')
-//   .contentWindow.document.getElementById('tinymce');
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _industrial_dark_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./industrial-dark.scss */ \"./themes/industrial-dark/industrial-dark.scss\");\n/* harmony import */ var _industrial_dark_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_industrial_dark_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* Industrial Dark Theme JS */\n\n// Import Industrial Dark Styles\n\n\n// Make Changes to TinyMCE iFrame\n// const theEditor = document.getElementById('content_ifr')\n//   .contentWindow.document.getElementById('tinymce');\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90aGVtZXMvaW5kdXN0cmlhbC1kYXJrL2luZGV4LmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vdGhlbWVzL2luZHVzdHJpYWwtZGFyay9pbmRleC5qcz9hMzVhIl0sInNvdXJjZXNDb250ZW50IjpbIi8qIEluZHVzdHJpYWwgRGFyayBUaGVtZSBKUyAqL1xuXG4vLyBJbXBvcnQgSW5kdXN0cmlhbCBEYXJrIFN0eWxlc1xuaW1wb3J0ICcuL2luZHVzdHJpYWwtZGFyay5zY3NzJztcblxuLy8gTWFrZSBDaGFuZ2VzIHRvIFRpbnlNQ0UgaUZyYW1lXG4vLyBjb25zdCB0aGVFZGl0b3IgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY29udGVudF9pZnInKVxuLy8gICAuY29udGVudFdpbmRvdy5kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndGlueW1jZScpO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./themes/industrial-dark/index.js\n");
 
 /***/ }),
-/* 4 */
+
+/***/ "./themes/industrial-dark/industrial-dark.scss":
+/*!*****************************************************!*\
+  !*** ./themes/industrial-dark/industrial-dark.scss ***!
+  \*****************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+eval("// extracted by mini-css-extract-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90aGVtZXMvaW5kdXN0cmlhbC1kYXJrL2luZHVzdHJpYWwtZGFyay5zY3NzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vdGhlbWVzL2luZHVzdHJpYWwtZGFyay9pbmR1c3RyaWFsLWRhcmsuc2Nzcz82NWQzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpbiJdLCJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./themes/industrial-dark/industrial-dark.scss\n");
 
 /***/ })
-/******/ ]);
+
+/******/ });
