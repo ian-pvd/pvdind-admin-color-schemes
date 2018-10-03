@@ -40,6 +40,7 @@ class PVD_Color_Schemes {
 	 */
 	private $colors = array(
 		'industrial',
+		'industrial-dark',
 	);
 
 	function __construct() {
@@ -57,6 +58,13 @@ class PVD_Color_Schemes {
 			plugins_url( "themes/industrial/colors$suffix.css", __FILE__ ),
 			array( '#242824', '#386F38', '#3FA63F', '#F1F2F1' ),
 			array( 'base' => '#F1F2F1', 'focus' => '#FFF', 'current' => '#FFF' )
+		);
+
+		wp_admin_css_color(
+			'industrial-dark', __( 'Industrial Dark', 'pvd_colors' ),
+			plugins_url( "themes/industrial-dark/colors$suffix.css", __FILE__ ),
+			array( '#090a09', '#181A18', '#3F693F', '#A2A8A2' ),
+			array( 'base' => '#A2A8A2', 'focus' => '#FFF', 'current' => '#FFF' )
 		);
 
 	}

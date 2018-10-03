@@ -14,7 +14,8 @@ const WebpackRtlPlugin = require('webpack-rtl-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    industrial: './themes/industrial/index.js'
+    'industrial': './themes/industrial/index.js',
+    'industrial-dark': './themes/industrial-dark/index.js'
   },
   output: {
     filename: '[name]/[name].js',
@@ -34,7 +35,17 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
-      }
+      },
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            mimetype: 'image/svg+xml',
+          },
+        },
+      },
     ]
   },
   plugins: [
