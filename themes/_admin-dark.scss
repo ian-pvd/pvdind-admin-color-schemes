@@ -65,8 +65,8 @@ a:focus .media-icon img,
 .wp-person a:focus .gravatar {
 	color: $link-focus;
 	box-shadow:
-		0 0 0 1px fade-out( $link-focus, .2),
-		0 0 2px 1px fade-out( $highlight-color, .5);
+		0 0 0 1px fade-out( $link-focus, 0.3),
+		0 0 2px 1px fade-out( $highlight-color, 0.9);
 }
 
 .ie8 a:focus {
@@ -543,34 +543,25 @@ div.error {
 /* Common Styles - Tabbed Admin Interface */
 
 .nav-tab {
-	border: 1px solid #ccc;
-	background: #e5e5e5;
-	color: #555;
+	border-color: $border-color;
+	background: $panel-background;
+	color: $text-color-alt;
 }
 
 .nav-tab:hover,
 .nav-tab:focus {
-	background-color: #fff;
-	color: #444;
+	background-color: $input-background;
+	color: $text-color-focus;
 }
 
 .nav-tab-active {
-	color: #444;
-}
-
-.nav-tab-active,
-.nav-tab-active:hover,
-.nav-tab-active:focus,
-.nav-tab-active:focus:active {
-	// border-bottom: 1px solid #f1f1f1;
-	// background: #f1f1f1;
-	// color: #000;
+	color: $text-color-focus;
 }
 
 h1.nav-tab-wrapper,
 .wrap h2.nav-tab-wrapper,
 .nav-tab-wrapper {
-	// border-bottom: 1px solid #ccc;
+	border-bottom-color: $border-color;
 }
 
 /* Common Styles - Misc */
@@ -763,24 +754,24 @@ div.star-holder .star-rating {
 
 [role="treeitem"].hover,
 [role="treeitem"] .folder-label.hover {
-	background-color: #eaeaea;
+	// background-color: #eaeaea;
 }
 
 .tree-folder .tree-folder::after {
-	border-left: 1px solid #ccc;
+	// border-left: 1px solid #ccc;
 }
 
 .tree-folder > li::before {
-	border-left: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	// border-left: 1px solid #ccc;
+	// border-bottom: 1px solid #ccc;
 }
 
 .tree-folder > li::after {
-	border-left: 1px solid #ccc;
+	// border-left: 1px solid #ccc;
 }
 
 .nonessential {
-	color: #666;
+	// color: #666;
 }
 
 .handlediv,

@@ -8,7 +8,7 @@
 
 /* Core Colors */
 
-$text-color: #B2B7B2;
+$text-color: #A2A8A2;//#B2B7B2;
 $base-color: #181A18;//#0C0D0C;
 $icon-color: darken($text-color, 24%);
 $highlight-color: #386F38;
@@ -72,11 +72,11 @@ $table-background-active: $highlight-background;
 
 /* Dark Theme Variables */
 
-$text-color-focus: mix($text-color, $link-focus) !default;
-$text-color-alt: darken( $text-color, 6% ) !default;
-$panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
 $border-color: darken( $base-color, 1.5% );
+$panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
 $table-background-alt: darken( $body-background, 1%) !default;
+$text-color-alt: darken( $text-color, 6% ) !default;
+$text-color-focus: mix($text-color, $link-focus) !default;
 
 $notice-dismiss: #A82A00;
 $notice-success: $highlight-color;
@@ -116,4 +116,17 @@ $input-border: darken( $base-color, 3% ) !default;
 
 .wp-core-ui .button.show-settings {
 	box-shadow: 0 1px 0 $border-color;
+}
+
+// WP Admin - About
+.about-wrap h1 {
+	color: $text-color;
+}
+
+.about-wrap .about-text {
+	color: $text-color-alt;
+}
+
+.about-wrap .changelog h3 {
+	color: $text-color-alt;
 }
