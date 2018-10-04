@@ -2,13 +2,17 @@
  * WordPress Admin Dark Style Overrides
  */
 
+/* Apply Colors to Default Style Rules */
+@import 'admin';
+
+/* Import Animations */
 @import 'animations';
 
 /* Common Styles */
 .screen-reader-shortcut:focus {
 	// background: #f1f1f1;
 	// color: #0073aa;
-	// box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	box-shadow: $box-shadow;
 }
 
 .widget-top,
@@ -27,7 +31,7 @@ p.popular-tags,
 .imgedit-group,
 .comment-ays {
 	border-color: $border-color;
-	// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: $box-shadow;
 }
 
 table.widefat {
@@ -65,7 +69,7 @@ a:focus,
 a:focus .media-icon img,
 .wp-person a:focus .gravatar {
 	color: $link-focus;
-	box-shadow: $box-shadow;
+	box-shadow: $box-highlight;
 }
 
 .ie8 a:focus {
@@ -114,16 +118,16 @@ code {
 .wrap .add-new-h2:active,
 .wrap .page-title-action,
 .wrap .page-title-action:active {
-	border-color: $input-border;
-	background: $input-background;
-	color: $input-text;
+	border-color: $action-border;
+	background: $action-background;
+	color: $action-text;
 }
 
 .wrap .add-new-h2:hover,
 .wrap .page-title-action:hover {
-	color: $text-color;
-	background: $highlight-color;
-	border-color: darken( $button-color, 15% );
+	color: $action-text-focus;
+	background: $action-background-focus;
+	border-color: $action-border-focus;
 }
 
 .page-title-action:focus {
@@ -203,9 +207,7 @@ ul.striped > :nth-child(odd),
 }
 
 .tagchecklist .ntdelbutton:focus .remove-tag-icon:before {
-	// box-shadow:
-	// 	0 0 0 1px #5b9dd9,
-	// 	0 0 2px 1px rgba(30, 140, 190, .8);
+	box-shadow: $box-highlight;
 }
 
 .howto {
@@ -252,11 +254,11 @@ span.required,
 
 #major-publishing-actions {
 	border-top-color: $border-color;
-	background: $input-background;
+	background: $action-background;
 }
 
 .wp-filter {
-	// box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	box-shadow: $box-shadow;
 	border-color: $border-color;
 	background: $panel-background;
 	color: $text-color;
@@ -339,12 +341,12 @@ span.required,
 .filter-group {
 	// background: #fff;
 	// border-color: #e5e5e5;
-	// box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	box-shadow: $box-shadow;
 }
 
 .filtered-by .tag {
 	// border-color: #e5e5e5;
-	// box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	box-shadow: $box-shadow;
 	// background: #fff;
 }
 
@@ -355,7 +357,7 @@ div.updated,
 div.error {
 	background: $panel-background;
 	border-left-color: $panel-background;
-	// box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+	box-shadow: $box-shadow;
 }
 
 .notice-title {
@@ -374,7 +376,7 @@ div.error {
 }
 
 .notice-dismiss:focus {
-	box-shadow: $box-shadow;
+	box-shadow: $box-highlight;
 }
 
 .ie8 .notice-dismiss:focus {
@@ -722,7 +724,7 @@ div.star-holder .star-rating {
 }
 
 .js .postbox .handlediv:focus .toggle-indicator:before {
-	box-shadow: $box-shadow;
+	box-shadow: $box-highlight;
 }
 
 #template textarea {
@@ -741,7 +743,7 @@ div.star-holder .star-rating {
 
 [role="treeitem"] .folder-label.focus {
 	color: $base-color;
-	box-shadow: $box-shadow;
+	box-shadow: $box-highlight;
 }
 
 [role="treeitem"].hover,
@@ -792,7 +794,7 @@ div.star-holder .star-rating {
 }
 
 .widget-top .widget-action:focus .toggle-indicator:before {
-	box-shadow: $box-shadow;
+	box-shadow: $box-highlight;
 }
 
 .accordion-section {
@@ -964,10 +966,7 @@ textarea {
 	border-color: $input-border;
 	// box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.07 );
 	background-color: $input-background;
-	// appearance: none;
-	// background-color: #FFF;
 	color: $input-text;
-	appearance: none;
 
 	&:focus {
 		border-color: $highlight-color;
@@ -977,9 +976,9 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-	// border-color: $input-border;
-	// background: $input-background;
-	// color: $input-text;
+	border-color: $input-border;
+	background: $input-background;
+	color: $input-text;
 	// box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.1 );
 }
 

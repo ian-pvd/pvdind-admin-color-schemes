@@ -1,12 +1,17 @@
+/**
+ * WordPress Admin Style Overrides
+ */
 
+/* Import Default Variables */
 @import 'variables';
+
+/* Import Helper Mixins */
 @import 'mixins';
 
 html,
 body.wp-admin {
 	background: $body-background;
 }
-
 
 /* Links */
 
@@ -26,7 +31,6 @@ div.dashboard-widget-submit input:hover,
 .subsubsub a.current:hover {
 	color: $link-focus;
 }
-
 
 /* Forms */
 
@@ -49,40 +53,38 @@ input[type=radio]:checked:before {
 .wp-core-ui {
 	.button,
 	.button-secondary {
-		color: $input-text;
-		border-color: $input-border;
-		background: $input-background;
-		box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+		color: $action-text;
+		border-color: $action-border;
+		background: $action-background;
+		box-shadow: $box-shadow;
 
 		&.hover,
 		&:hover,
 		&.focus,
 		&:focus {
-			background: #fafafa;
-			border-color: #999;
-			color: #23282d;
+			background: $action-background-focus;
+			border-color: $action-border-focus;
+			color: $action-text-focus;
 		}
 
 		&.focus,
 		&:focus {
-			border-color: #5b9dd9;
-			box-shadow: 0 0 3px rgba( 0, 115, 170, .8 );
+			border-color: $action-border-focus;
+			box-shadow: $box-highlight;
 		}
 
 		&.active,
 		&.active:hover,
 		&:active,
 		&:active {
-			background: #eee;
-			border-color: #999;
+			background: $action-background;
+			border-color: $action-border;
 			box-shadow: inset 0 2px 5px -3px rgba( 0, 0, 0, 0.5 );
 		}
 
 		&.active:focus {
-			border-color: #5b9dd9;
-			box-shadow:
-				inset 0 2px 5px -3px rgba( 0, 0, 0, 0.5 ),
-				0 0 3px rgba( 0, 115, 170, .8 );
+			border-color: $action-border-focus;
+			box-shadow: $box-highlight;
 		}
 
 		&[disabled],
@@ -92,35 +94,33 @@ input[type=radio]:checked:before {
 		&:disabled,
 		&.disabled,
 		&-disabled {
-			color: #a0a5aa !important;
-			border-color: #ddd !important;
-			background: #f7f7f7 !important;
-			text-shadow: 0 1px 0 #fff !important;
+			color: desaturate( darken( $action-text, 3%), 9% ) !important;
+			border-color: $action-border !important;
+			background: desaturate( lighten( $action-background, 3%), 9% ) !important;
+			text-shadow: 0 1px 0 rgba(0,0,0,0.1) !important;
 		}
 	}
 
 	.button-link {
-		color: #0073aa;
+		color: $link;
 
 		&:hover,
 		&:active {
-			color: #00a0d2;
+			color: $link-focus;
 		}
 
 		&:focus {
-			color: #124964;
-			box-shadow:
-				0 0 0 1px #5b9dd9,
-				0 0 2px 1px rgba(30, 140, 190, .8);
+			color: $link-focus;
+			box-shadow: $box-highlight;
 		}
 
 		&-delete {
-			color: #a00;
+			color: $notice-dismiss;
 		}
 
 		&-delete:hover,
 		&-delete:focus {
-			color: #dc3232;
+			color: $notice-error;
 		}
 	}
 
@@ -197,7 +197,6 @@ input[type=radio]:checked:before {
 .plugins .active th {
 	background-color: $table-background-active;
 }
-
 
 /* Admin Menu */
 

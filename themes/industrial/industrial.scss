@@ -13,7 +13,6 @@ $notification-color: #7E542A;
 /* Global Admin Colors */
 
 $body-background: #F1F1F1;
-$highlight-background: #F7FCF7;
 
 $link: $highlight-color;
 $link-focus: #3FA63F;
@@ -25,9 +24,11 @@ $form-checked: $highlight-color;
 /* Advanced Color Variable Options */
 
 $menu-submenu-focus-text: $link-focus;
+
 $menu-collapse-focus-text: $link-focus;
+
 $table-border-active: $highlight-color;
-$table-background-active: $highlight-background;
+$table-background-active: #F7FCF7;
 
 /* Apply Colors to Default Style Rules */
 @import '../admin';
