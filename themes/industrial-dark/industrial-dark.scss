@@ -10,7 +10,7 @@
 
 $text-color: #A2A8A2;
 $base-color: #181A18;
-$icon-color: darken($text-color, 24%);
+$icon-color: $text-color;
 $highlight-color: #386F38;
 $notification-color: #7E542A;
 
@@ -28,7 +28,7 @@ $form-checked: $highlight-color;
 /* Advanced Color Variable Options */
 
 $menu-text: $text-color;
-$menu-icon: $icon-color;
+$menu-icon: darken($icon-color, 24%);
 $menu-icon-focus: $text-color;
 $menu-background: $base-color;
 
@@ -83,15 +83,18 @@ $notice-error: #DF0F1F;
 $notice-info: #759375;
 
 // Inputs & Action Buttons
-$input-text: $highlight-color;
-$input-background: lighten( $panel-background, 3% );
+$input-text: $text-color-focus;
+$input-background: lighten( $panel-background, 6% );
 $input-border: darken( $base-color, 3% );
+
 $input-text-focus: lighten( $text-color, 24% );
-$input-background-focus: #F0F;
-$input-border-focus: #F0F;
-$action-text: $input-text;
-$action-background: $input-background;
+$input-background-focus: lighten( $input-background, 6% );;
+$input-border-focus: $input-border;
+
+$action-text: $highlight-color;
+$action-background: darken( $panel-background, 3% );
 $action-border: $input-border;
+
 $action-text-focus: lighten( $text-color, 24% );
 $action-background-focus: $highlight-color;
 $action-border-focus: darken( $button-color, 15% );
@@ -136,4 +139,131 @@ $box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 
 .about-wrap .changelog h3 {
 	color: $text-color-alt;
+}
+
+/* Post Editor Styles */
+#titlediv #title {
+	background-color: $input-background;
+	color: $input-text;
+}
+
+#wp-content-editor-tools {
+    background-color: $body-background;
+}
+
+// Editor Color Overrides
+.admin-color-industrial-dark {
+	div.mce-toolbar-grp {
+		border-bottom: $border-color;
+		background: $panel-background;
+	}
+
+	.wp-editor-expand #wp-content-editor-tools {
+		border-bottom-color: $border-color;
+	}
+
+	.mce-toolbar {
+		.mce-ico {
+			color: $icon-color;
+		}
+
+		.mce-btn-group .mce-btn.mce-listbox {
+			background: $input-background;
+			border-color: $input-border;
+
+			&:hover,
+			&:focus {
+				border-color: $input-border-focus;
+			}
+		}
+
+		.mce-menubtn button {
+			color: $text-color;
+		}
+
+		.mce-btn-group {
+			.mce-btn:focus,
+			.mce-btn:hover {
+				background: $input-background-focus;
+				border-color: $input-border-focus;
+				box-shadow: inset 0 1px 0 $text-color-alt, $box-shadow;
+			}
+
+			.mce-btn.mce-active,
+			.mce-btn:active {
+				background: $table-background;
+				border-color: $border-color;
+				box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.3);
+
+				.mce-ico {
+					color: $text-color-focus;
+				}
+			}
+
+			.mce-btn.mce-disabled:focus,
+			.mce-btn.mce-disabled:hover {
+				border-color: $border-color;
+			}
+		}
+	}
+
+	.mce-panel .mce-btn {
+		i.mce-caret {
+			border-top-color: $text-color;
+		}
+
+		&:hover i.mce-caret {
+			border-top-color: $text-color;
+		}
+	}
+
+	.qt-dfw {
+		color: $icon-color;
+
+		&:hover,
+		&:focus {
+			background: $input-background-focus;
+			border-color: $input-border-focus;
+			color: $text-color;
+			box-shadow: inset 0 1px 0 $text-color-alt, $box-shadow;
+		}
+
+		&:active {
+			background: $table-background;
+			border-color: $border-color;
+			color: $text-color-focus;
+			box-shadow: none;
+		}
+	}
+
+	.wp-switch-editor {
+		background: $table-background;
+		color: $text-color-alt;
+		border-color: $border-color;
+
+		&:focus {
+			box-shadow: $box-highlight;
+			color: $link-focus;
+		}
+
+		&:active {
+			background-color: $table-background-alt;
+		}
+	}
+
+	.html-active .switch-html,
+	.tmce-active .switch-tmce {
+		background: $panel-background;
+		color: $text-color;
+		border-bottom-color: $panel-background;
+	}
+
+	.wp-editor-container {
+		border-color: $border-color;
+	}
+
+	.quicktags-toolbar {
+		border-bottom-color: $border-color;
+		background: $panel-background;
+	}
 }
