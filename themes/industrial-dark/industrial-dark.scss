@@ -84,7 +84,7 @@ $notice-info: #759375;
 
 // Inputs & Action Buttons
 $input-text: $text-color-focus;
-$input-background: lighten( $panel-background, 6% );
+$input-background: lighten( $panel-background, 3% );
 $input-border: darken( $base-color, 3% );
 
 $input-text-focus: lighten( $text-color, 24% );
@@ -152,7 +152,7 @@ $box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
 // Editor Color Overrides
-.admin-color-industrial-dark {
+body[class*="-dark"] {
 	div.mce-toolbar-grp {
 		border-bottom: $border-color;
 		background: $panel-background;
@@ -266,4 +266,34 @@ $box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 		border-bottom-color: $border-color;
 		background: $panel-background;
 	}
+
+	#post-status-info {
+		border-color: $border-color;
+		background-color: $panel-background;
+	}
+}
+
+.wp-tab-active,
+ul.add-menu-item-tabs li.tabs,
+ul.category-tabs li.tabs {
+	border-color: $border-color;
+	border-bottom-color: $table-background;
+	background-color: $table-background;
+}
+
+#post-body ul.add-menu-item-tabs li.tabs a,
+#post-body ul.category-tabs li.tabs a,
+#side-sortables .add-menu-item-tabs .tabs a,
+#side-sortables .category-tabs .tabs a,
+.wp-tab-bar .wp-tab-active a {
+	color: $text-color;
+}
+
+.categorydiv div.tabs-panel,
+.customlinkdiv div.tabs-panel,
+.posttypediv div.tabs-panel,
+.taxonomydiv div.tabs-panel,
+.wp-tab-panel {
+	border-color: $border-color;
+	background-color: $table-background;
 }

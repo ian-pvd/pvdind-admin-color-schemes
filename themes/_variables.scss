@@ -83,12 +83,15 @@ $notice-info: #759375;
 $input-text: $highlight-color !default;
 $input-background: lighten( $panel-background, 3% ) !default;
 $input-border: darken( $base-color, 3% ) !default;
-// $input-text-focus: #F0F;
-// $input-background-focus: #F0F;
-// $input-border-focus: #F0F;
+
+$input-text-focus: #F0F !default;
+$input-background-focus: #F0F !default;
+$input-border-focus: #F0F !default;
+
 $action-text: #555555 !default;
 $action-background: #F7F7F7 !default;
 $action-border: #CCCCCC !default;
+
 $action-text-focus: #23282D !default;
 $action-background-focus: #FAFAFA !default;
 $action-border-focus: #999999 !default;
