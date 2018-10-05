@@ -34,6 +34,42 @@ div.dashboard-widget-submit input:hover,
 
 /* Forms */
 
+input[type="text"],
+input[type="password"],
+input[type="checkbox"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="search"],
+input[type="radio"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select,
+textarea {
+	border-color: $input-border;
+	background-color: $input-background;
+	color: $input-text;
+
+	&:focus {
+		border-color: $input-border-focus;
+		box-shadow: $box-highlight;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	border-color: $input-border;
+	background: $input-background;
+	color: $input-text;
+}
+
 input[type=checkbox]:checked:before {
 	color: $form-checked;
 }
@@ -42,34 +78,37 @@ input[type=radio]:checked:before {
 	background: $form-checked;
 }
 
-.wp-core-ui input[type="reset"]:hover,
-.wp-core-ui input[type="reset"]:active {
-	color: $link-focus;
+input[type="radio"]:checked + label:before {
+	// color: #82878c;
 }
 
+.wp-core-ui input[type="reset"]:hover,
+.wp-core-ui input[type="reset"]:active {
+	color: $button-text-focus;
+}
 
 /* Core UI */
 
 .wp-core-ui {
 	.button,
 	.button-secondary {
-		color: $input-text;
-		border-color: $input-border;
-		background: $input-background;
+		color: $button-text;
+		border-color: $button-border;
+		background: $button-background;
 		box-shadow: $box-shadow;
 
 		&.hover,
 		&:hover,
 		&.focus,
 		&:focus {
-			background: $input-background-focus;
-			border-color: $input-border-focus;
-			color: $input-text-focus;
+			background: lighten( $button-background, 1%);
+			border-color: darken( $button-border, 20% );
+			color: $button-text-focus;
 		}
 
 		&.focus,
 		&:focus {
-			border-color: $input-border-focus;
+			border-color: $button-border-focus;
 			box-shadow: $box-highlight;
 		}
 
@@ -77,13 +116,13 @@ input[type=radio]:checked:before {
 		&.active:hover,
 		&:active,
 		&:active {
-			background: $input-background;
-			border-color: $input-border;
+			background: $button-background;
+			border-color: $button-border;
 			box-shadow: inset 0 2px 5px -3px rgba( 0, 0, 0, 0.5 );
 		}
 
 		&.active:focus {
-			border-color: $input-border-focus;
+			border-color: $button-border-focus;
 			box-shadow: $box-highlight;
 		}
 
@@ -94,9 +133,9 @@ input[type=radio]:checked:before {
 		&:disabled,
 		&.disabled,
 		&-disabled {
-			color: desaturate( darken( $input-text, 3%), 9% ) !important;
-			border-color: $input-border !important;
-			background: desaturate( lighten( $input-background, 3%), 9% ) !important;
+			color: desaturate( darken( $button-text, 3%), 9% ) !important;
+			border-color: $button-border !important;
+			background: desaturate( lighten( $button-background, 3%), 9% ) !important;
 			text-shadow: 0 1px 0 rgba(0,0,0,0.1) !important;
 		}
 	}

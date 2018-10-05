@@ -17,7 +17,7 @@ $link: #0073aa !default;
 $link-focus: lighten( $link, 10% ) !default;
 
 $button-color: $highlight-color !default;
-$button-border-focus: lighten($highlight-color, 25%) !default;
+$button-border-focus: lighten( $link-focus, 12% ) !default;
 $form-checked: $highlight-color !default;
 
 
@@ -79,14 +79,22 @@ $notice-warning: #DF7C1F;
 $notice-error: #DF0F1F;
 $notice-info: #759375;
 
-// Inputs & Action Buttons
-$input-text: $highlight-color !default;
-$input-background: lighten( $panel-background, 3% ) !default;
-$input-border: darken( $base-color, 3% ) !default;
+// Inputs, Buttons & Title Actions
+$input-text: #32373c !default;
+$input-background: #FFFFFF !default;
+$input-border: #DDDDDD !default;
 
-$input-text-focus: #F0F !default;
-$input-background-focus: #F0F !default;
-$input-border-focus: #F0F !default;
+$input-text-focus: $input-text !default;
+$input-background-focus: $input-background !default;
+$input-border-focus: lighten( $link-focus, 12% ) !default;
+
+$button-text: #555555 !default;
+$button-background: #F7F7F7 !default;
+$button-border: #CCCCCC !default;
+
+$button-text-focus: $button-text !default;
+$button-background-focus: #EEEEEE !default;
+$button-border-focus: $button-border-focus !default;
 
 $action-text: #555555 !default;
 $action-background: #F7F7F7 !default;
@@ -98,6 +106,6 @@ $action-border-focus: #999999 !default;
 
 // Highlights & Focus Shadows
 $box-highlight:
-	0 0 1px 1px fade-out( $link-focus, 0.3),
-	0 0 3px 1px fade-out( $highlight-color, 0.7) !default;
+	0 0 1px 1px fade-out( $button-border-focus, 0.3 ),
+	0 0 2px 1px fade-out( lighten( $link, 24% ), 0.9 ) !default;
 $box-shadow: 0 1px 1px rgba(0,0,0,0.1) !default;
