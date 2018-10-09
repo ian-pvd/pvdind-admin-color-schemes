@@ -538,6 +538,25 @@ ul#adminmenu > li.current > a.current:after {
 	color: $menu-submenu-text;
 }
 
+/* Dashboard */
+
+#dashboard-widgets h4,
+#dashboard-widgets h3,
+#dashboard_quick_press .drafts h2 {
+	color: $text-color-alt;
+}
+
+.activity-block {
+	border-bottom-color: $border-color;
+}
+
+#activity-widget #the-comment-list .comment-item {
+	background: $panel-background;
+}
+
+#dashboard_activity .subsubsub {
+	border-top-color: $border-color;
+}
 
 /* Pointers */
 
@@ -704,4 +723,10 @@ div#wp-responsive-toggle a:before {
 .mce-container.mce-menu .mce-menu-item-normal.mce-active,
 .mce-container.mce-menu .mce-menu-item-preview.mce-active {
 	background: $highlight-color;
+}
+
+/* Common Styles - Misc */
+
+.js .postbox .handlediv:focus .toggle-indicator:before {
+	box-shadow: $box-highlight;
 }

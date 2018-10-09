@@ -64,13 +64,13 @@ $table-background-active: lighten($highlight-color, 65%) !default;
 
 // PVD Admin Color Variables
 
-$border-color: darken( $base-color, 1.5% );
-$panel-background: desaturate( lighten( $body-background, 3% ), 3% );
-$table-background: lighten( $body-background, 1%);
-$table-background-alt: darken( $body-background, 1%);
+$border-color: darken( $base-color, 1.5% ) !default;
+$panel-background: desaturate( lighten( $body-background, 3% ), 3% ) !default;
+$table-background: lighten( $body-background, 1%) !default;
+$table-background-alt: darken( $body-background, 1%) !default;
 
-$text-color-alt: darken( $text-color, 6% );
-$text-color-focus: mix($text-color, $link-focus);
+$text-color-alt: darken( $text-color, 6% ) !default;
+$text-color-focus: mix($text-color, $link-focus) !default;
 
 // TODO: Reset these to WP Defaults:
 $notice-dismiss: #A82A00;
@@ -106,6 +106,6 @@ $action-border-focus: #999999 !default;
 
 // Highlights & Focus Shadows
 $box-highlight:
-	0 0 1px 1px fade-out( $button-border-focus, 0.3 ),
-	0 0 2px 1px fade-out( lighten( $link, 24% ), 0.9 ) !default;
+	0 0 0 1px fade-out( $button-border-focus, 0.3 ),
+	0 0 2px 1px fade-out( lighten( $link, 24% ), 0.3 ) !default;
 $box-shadow: 0 1px 1px rgba(0,0,0,0.1) !default;
