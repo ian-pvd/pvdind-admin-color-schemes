@@ -1,0 +1,40 @@
+/**
+ * Dark Mode Option
+ *
+ * Overrides admin color options preview.
+ *
+ * @TODO : Needs to be compiled with the correct theme name for each
+ * selector and enqueued in the admin if the plugin is active.
+ */
+
+.color-option {
+  position: relative;
+}
+
+.color-option.selected input[value="-dark"] ~ table::before,
+.color-option:hover input[value="-dark"] ~ table::before {
+  background: rgba(0,0,0,0.75);
+}
+
+input[value="-dark"] ~ table::before {
+  background: rgba(0,0,0,0.667);
+  content: '';
+  display: block;
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: 0;
+}
+
+input[value="-dark"],
+[for*="-dark"],
+input[value="-dark"] ~ table tbody {
+  position: relative;
+  z-index: 1;
+}
+
+[for*="-dark"] {
+  color: lightgray;
+}
