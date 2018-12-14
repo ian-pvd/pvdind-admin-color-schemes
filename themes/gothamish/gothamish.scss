@@ -1,0 +1,34 @@
+/**
+ * PVD Industrial WP Admin Theme Colors
+ */
+
+/* Core Colors */
+
+$text-color: #F1F1F1;
+$base-color: #1A1A1A;
+$icon-color: fade-out(#FFFFFF, 0.6);
+$highlight-color: #AA0000;//#333232;
+$notification-color: #AA0000;
+
+/* Global Admin Colors */
+
+$body-background: #F1F1F1;
+
+$link: $highlight-color;
+$link-focus: #666666;//#333232;
+
+$button-color: #990000;
+// $button-border-focus: lighten($highlight-color, 25%);
+$form-checked: $highlight-color;
+
+/* Advanced Color Variable Options */
+
+$menu-submenu-focus-text: $link-focus;
+
+$menu-collapse-focus-text: $link-focus;
+
+$table-border-active: $highlight-color;
+$table-background-active: #E6E6E6;
+
+/* Apply Colors to Default Style Rules */
+@import '../admin';

@@ -39,6 +39,7 @@ class PVD_Color_Schemes {
 	 *                    Needed for registering colors-fresh dependency.
 	 */
 	private $colors = array(
+		'gothamish',
 		'industrial',
 		'industrial-dark',
 	);
@@ -52,6 +53,13 @@ class PVD_Color_Schemes {
 	 */
 	function add_colors() {
 		$suffix = is_rtl() ? '-rtl' : '';
+
+		wp_admin_css_color(
+			'gothamish', __( 'Gothamish', 'pvd_colors' ),
+			plugins_url( "themes/gothamish/colors$suffix.css", __FILE__ ),
+			array( '#1A1A1A', '#AA0000', '#E6E6E6', '#F1F1F1' ),
+			array( 'base' => '#F1F2F1', 'focus' => '#FFF', 'current' => '#FFF' )
+		);
 
 		wp_admin_css_color(
 			'industrial', __( 'Industrial', 'pvd_colors' ),
