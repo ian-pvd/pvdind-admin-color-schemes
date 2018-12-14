@@ -14,6 +14,7 @@ const WebpackRtlPlugin = require('webpack-rtl-plugin');
 module.exports = {
   mode: 'production',
   entry: {
+    'gothamish': './themes/gothamish/index.js',
     'industrial': './themes/industrial/index.js',
     'industrial-dark': './themes/industrial-dark/index.js'
   },
